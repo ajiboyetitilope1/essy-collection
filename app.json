@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "ESSY Collection",
+    "slug": "essy-collection",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "essycollection",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.essycollection.store"
+    },
+    "android": {
+      "package": "com.essycollection.store",
+      "adaptiveIcon": {
+        "backgroundColor": "#59634D",
+        "foregroundImage": "./assets/images/essy-foreground.png"
+      },
+      "predictiveBackGestureEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/essy-foreground.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#59634D"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
